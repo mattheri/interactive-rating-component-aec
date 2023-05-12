@@ -1,0 +1,5 @@
+.card {
+  max-width: 30rem !important;
+  background-color: rgb(27, 26, 41);
+  border-radius: 0.5rem;
+}

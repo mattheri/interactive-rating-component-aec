@@ -9,7 +9,11 @@ const Button = (props) => {
   if (props.type) type = props.type;
 
   return (
-    <button type={type} className={classnames.join(" ")}>
+    <button
+      onClick={props.onClick}
+      type={type}
+      className={classnames.join(" ")}
+    >
       {props.children}
     </button>
   );

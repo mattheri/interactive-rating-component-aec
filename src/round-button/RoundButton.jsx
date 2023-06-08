@@ -3,7 +3,14 @@ import "./RoundButton.css";
 import Button from "../button/Button";
 
 const RoundButton = (props) => {
-  return <Button className="round-button">{props.children}</Button>;
+  const classnames = ["round-button"];
+
+  if (props.className) classnames.push(props.className);
+  return (
+    <Button onClick={props.onClick} className={classnames.join(" ")}>
+      {props.children}
+    </Button>
+  );
 };
 
 export default RoundButton;
